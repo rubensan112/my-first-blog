@@ -1,0 +1,7 @@
+*.pyc
+__pycache__
+myvenv
+db.sqlite3
+.DS_Store
+Creacion del entorno virtual.txt
+Creacion pagina web.txt

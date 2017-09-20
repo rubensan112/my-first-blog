@@ -8,6 +8,10 @@ from .forms import PostForm
 from django.shortcuts import redirect
 
 # Create your views here.
+def post_draft_list(request):
+    posts = Post.objects.filter(published_date__isnull=True).order_by('created_date')
+    return render(request, 'angel/post_draft_list.html', {'posts': posts})
+
 def post_edit(request, pk):
     post = get_object_or_404(Post, pk=pk)
     if request.method == "POST":
@@ -27,7 +31,6 @@ def post_new(request):
         if form.is_valid():
             post = form.save(commit=False) #El commit=false quiere decir, que aun no queremos guardar el modelo Post
             post.author = request.user #Forzamos el author
-            post.published_date = timezone.now() #Forzamos la fecha de publicacion.
             post.save()
             return redirect('post_detail', pk=post.pk) #Este nuevo post que se ha creado, tendra un pk, lo cogemos para que nos diriga a el.
     else:

@@ -1,6 +1,6 @@
   .logo img[alt='My image'] {
-    max-width:75%;
-    max-height:75%;
+    max-width:100%;
+    max-height:100%;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -17,19 +17,30 @@
     float: left;
     margin-left: 10px;
     margin-top: 10px;
-    width:50px;
-    height:120px;
+    width:100px;
+    height:100px;
     border-bottom-width: 1px;
     border-color: navy;
     border-radius: 10%;
     }
     .background {
     background-color: black;
-    
+    height: 120px;
+    position:relative;
     
     }
+    
+    span p {
+    	color: #8b0000;
+    	position: absolute;
+    	left:8%;
+    	font-family: 'Lobster', cursive;
+    	font-size: 36pt;
+      top: 50%;
+      transform: translateY(-50%);
+    }
      body {
-    background-image: url("https://comicsforeveryone.files.wordpress.com/2013/10/marikawa-shizuka-highschool-of-the-dead-33069607-1920-1080.jpg");
+    background-image: url("https://i.imgur.com/U3AarCQ.jpg");
     background-position-x: 50%;
     background-position-y: 50%;
     background-size: cover;

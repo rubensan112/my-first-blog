@@ -45,6 +45,12 @@
     background-position-y: 50%;
     background-size: cover;
     }
+    @media all and (max-width: 980px) {
+    .logo img[alt='My image']{
+        width:0%;
+        height:0%;
+    }
+}
 
     .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
         color: #ffffff;

@@ -1,23 +1,12 @@
-{% load staticfiles %}
-<html>
-<head>
-    <title>La ciudad del Angel</title>
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet"
-          type="text/css">
-    <link rel="stylesheet" href="{% static 'css/laciudaddelangel_test.css' %}">
-</head>
-<body>
-<div class="background">
-    <span>
-<div class="logo">
-    <img src="{% static 'images/logo3.png' %}" alt="My image"/>
-</div>
-        </span>
-    <span>
-        <p>La ciudad del angel</p>
-        </span>
-</div>
-</body>
-</html>
+{% extends 'angel/base.html' %}
+{% block content %}
+{% for post in posts %}
+        <div class="post">
+            <div class="date">
+                {{ post.published_date }}
+            </div>
+            <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+            <p>{{ post.text|linebreaksbr }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}

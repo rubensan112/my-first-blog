@@ -29,9 +29,8 @@
     position:relative;
     
     }
-    .page-header {
+    . page-header {
     	width: 0px;
-    	margin-top:0px;
     }
     span p {
     	color: #8b0000;

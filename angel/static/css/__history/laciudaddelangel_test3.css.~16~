@@ -17,7 +17,7 @@
     float: left;
     margin-left: 10px;
     margin-top: 10px;
-    max-width:100%;
+    width:100px;
     height:100px;
     border-bottom-width: 1px;
     border-color: navy;
@@ -25,15 +25,65 @@
     }
     .background {
     background-color: black;
-    height: 100px;
+    height: 120px;
+    position:relative;
     
     }
+    .page-header {
+    	height: 100%;
+    	width: 20%;
+    	margin-top:0px;
+    	border-bottom:0px;
+    	padding-bottom: 0px;
+    margin: 0px;
+    right:0%;
+    position:absolute;
+    text-align: right;
+    }
+    .page-header p{
+    	margin: 0px;
+    	display: inline-block;
+    }
+    span p {
+    	color: #8b0000;
+    	position: absolute;
+    	left:8%;
+    	font-family: 'Lobster', cursive;
+    	font-size: 36pt;
+      top: 50%;
+      transform: translateY(-50%);
+    }
      body {
-    background-image: url("https://comicsforeveryone.files.wordpress.com/2013/10/marikawa-shizuka-highschool-of-the-dead-33069607-1920-1080.jpg");
+    background-image: url("https://i.imgur.com/U3AarCQ.jpg");
     background-position-x: 50%;
     background-position-y: 50%;
     background-size: cover;
     }
+    @media all and (max-width: 1100px) {
+    .logo img[alt='My image']{
+        width:0%;
+        height:0%;
+    }
+    @media all and (max-width: 1100px) {
+    .page-header a span{
+       display:None;
+    }
+    @media all and (max-width: 1100px) {
+    .page-header p {
+    	display:None;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 
     .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
         color: #ffffff;

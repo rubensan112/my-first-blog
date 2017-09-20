@@ -30,8 +30,20 @@
     
     }
     .page-header {
-    	width: 0px;
+    	height: 100%;
+    	width: 20%;
     	margin-top:0px;
+    	border-bottom:0px;
+    	padding-bottom: 0px;
+    margin: 0px;
+    right:5%;
+    top: 5%;
+    position:absolute;
+    text-align: right;
+    }
+    .page-header p{
+    	margin: 0px;
+    	display: inline-block;
     }
     span p {
     	color: #8b0000;
@@ -48,12 +60,31 @@
     background-position-y: 50%;
     background-size: cover;
     }
-    @media all and (max-width: 980px) {
+    @media all and (max-width: 1100px) {
     .logo img[alt='My image']{
         width:0%;
         height:0%;
     }
+    @media all and (max-width: 1100px) {
+    .page-header a span{
+       display:None;
+    }
+    @media all and (max-width: 1100px) {
+    .page-header p {
+    	display:None;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
 
     .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
         color: #ffffff;

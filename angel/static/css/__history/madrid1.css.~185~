@@ -35,6 +35,7 @@ body {
 }
 ul{ 
   list-style-type: none;
+  list-style-position: outside;
 }
 a.nav{
 
@@ -62,7 +63,7 @@ color: #2d2523;
  font-size:16px;
  position:absolute;
  top:100%;
-
+ transform: translateX(-35%);
 }
 .categories:hover {
 color: #420000;
@@ -83,8 +84,7 @@ flex-grow:3;
 	display:flex;
 }
 .categories:hover ul{
-	background-color: yellow;
-	margin-left:35px;
+background-color: #fffaf0;
 }
 .first {
 	width:20%;

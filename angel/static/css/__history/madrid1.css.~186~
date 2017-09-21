@@ -35,6 +35,7 @@ body {
 }
 ul{ 
   list-style-type: none;
+  list-style-position: outside;
 }
 a.nav{
 
@@ -83,20 +84,19 @@ flex-grow:3;
 	display:flex;
 }
 .categories:hover ul{
-	background-color: yellow;
-	margin-left:35px;
+background-color: #fffaf0;
 }
 .first {
-	width:20%;
+	width:10%;
 	height: 100%;
 }
 .second {
-	width:60%;
+	width:80%;
 	background-color: #e2e2e2;
 	height:100%;
 }
 .third {
-	width:20%;
+	width:10%;
 	height: 100%;
 }
 img {

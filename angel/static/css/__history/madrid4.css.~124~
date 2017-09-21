@@ -51,6 +51,7 @@ body {
 }
 .category-secondary-link {
 	color: #e2e2e2;
+	font-size:18px;
 }
 ul{ 
    list-style-type: none;

@@ -1,9 +1,12 @@
 
 body { 
-  background-image: url(http://127.0.0.1:8000/static/images/fondo-estadio1.jpg);
+  background-image: url(/static/images/fondo-estadio1.jpg);
   background-size: cover;
 
   
+}
+.category-primary-link {
+	 color: #e2e2e2;
 }
 .top-page {
 	 background-color: #2D2523;
@@ -34,14 +37,22 @@ ul{
   list-style-type: none;
 }
 a.nav{
-color: #e2e2e2;
+
 
 }
 .cat{
-	background: #3c0000;
-border: 1px solid #e2e2e2;
+
+
 margin: 5px;
 padding: 5px;
+}
+.cat .cat{
+border: 1px solid #e2e2e2;
+background-color: #ffe8e8;
+margin: 4px;
+padding: 4px;
+color: #2d2523;
+
 }
 .categories-secondary{
 	display:none;
@@ -51,18 +62,45 @@ padding: 5px;
  font-size:16px;
  position:absolute;
  top:100%;
- 
- transform: translateX(-38%);
- 
- 
+ transform: translateX(-35%);
+}
+.categories:hover {
+color: #420000;
+}
+a.category-primary-link:hover {
+	color: #ffe8e8;
+}
+a.category-secondary-link:hover {
+	color: #2a0000;
+}
+a{
+	color: #2d2523;
 }
 .logo {
 flex-grow:3;
 }
+.page-body {
+	display:flex;
+}
+.categories:hover ul{
+background-color: #fffaf0;
+}
+.first {
+	width:20%;
+	height: 100%;
+}
+.second {
+	width:60%;
+	background-color: #e2e2e2;
+	height:100%;
+}
+.third {
+	width:20%;
+	height: 100%;
+}
 img {
 padding:10px;
 flex-shrink: 20;
-
 }
 @media all and (max-height: 680px) {
      img{
@@ -71,5 +109,3 @@ flex-shrink: 20;
 .logo a{
 	padding:10px;
 }
-
-780

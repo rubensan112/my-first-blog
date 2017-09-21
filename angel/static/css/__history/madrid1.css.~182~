@@ -35,7 +35,6 @@ body {
 }
 ul{ 
   list-style-type: none;
-  list-style-position: outside;
 }
 a.nav{
 
@@ -44,14 +43,12 @@ a.nav{
 .cat{
 
 
-margin: 5px;
-padding: 5px;
+
 }
 .cat .cat{
 border: 1px solid #e2e2e2;
 background-color: #ffe8e8;
-margin: 4px;
-padding: 4px;
+
 color: #2d2523;
 
 }

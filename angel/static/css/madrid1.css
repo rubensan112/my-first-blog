@@ -1,6 +1,6 @@
 
 body { 
-  background-image: url(http://127.0.0.1:8000/static/images/fondo-estadio1.jpg);
+  background-image: url(/static/images/fondo-estadio1.jpg);
   background-size: cover;
 
   

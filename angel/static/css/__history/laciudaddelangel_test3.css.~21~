@@ -30,16 +30,20 @@
     
     }
     .page-header {
-    	height: 0px;
+    	height: 100%;
+    	width: 20%;
     	margin-top:0px;
     	border-bottom:0px;
     	padding-bottom: 0px;
     margin: 0px;
-    right:5%;
+    right: 20px;
+    top: 10px;
     position:absolute;
+    text-align: right;
     }
     .page-header p{
-    	left:5%;
+    	margin: 0px;
+    	display: inline-block;
     }
     span p {
     	color: #8b0000;

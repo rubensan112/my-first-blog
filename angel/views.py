@@ -9,7 +9,19 @@ from django.shortcuts import redirect
 from django.contrib.auth.decorators import login_required #Para el tema de requerir login
 
 # Create your views here.
+def home_page(request):
+    return render(request, 'angel/base_test.html', {})
+def not_found(request):
+    return render(request, 'angel/not_found.html', {})
 
+
+
+
+
+
+
+
+'''
 @login_required
 def post_remove(request, pk):
     post = get_object_or_404(Post, pk=pk)
@@ -61,3 +73,5 @@ def post_detail(request, pk):
 def home_page(request):
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
     return render(request, 'angel/home_page1.html', {'posts': posts})
+    '''
+

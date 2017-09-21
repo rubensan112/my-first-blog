@@ -46,7 +46,7 @@
     	display: inline-block;
     }
     span p {
-    	color: fuchsia;
+    	color: #8b0000;
     	position: absolute;
     	left:8%;
     	font-family: 'Lobster', cursive;

@@ -1,0 +1,75 @@
+
+body { 
+  background-image: url(http://127.0.0.1:8000/static/images/fondo-estadio1.jpg);
+  background-size: cover;
+
+  
+}
+.top-page {
+	 background-color: #2D2523;
+	 height: 13%;
+	 display:flex;
+  flex-wrap:nowrap;
+  justify-content:space-around;
+  align-items:center;
+    
+}
+.navigation-var {
+	 flex-grow:10;
+	 font-family: 'Annie Use Your Telescope';
+	 font-size: 24px;
+	 color: #e2e2e2;
+}
+.navigation-var-box{
+	display:flex;
+	flex-wrap:nowrap;
+  justify-content:space-around;
+  align-items:center;
+	
+}
+.categories {
+	position:relative;
+}
+ul{ 
+  list-style-type: none;
+}
+a.nav{
+color: #e2e2e2;
+
+}
+.cat{
+	background: #3c0000;
+border: 1px solid #e2e2e2;
+margin: 5px;
+padding: 5px;
+}
+.categories-secondary{
+	display:none;
+}
+.categories:hover  .categories-secondary{
+ display:block;
+ font-size:16px;
+ position:absolute;
+ top:100%;
+ right:75%;
+ transform: translateX(-50%);
+ 
+ 
+}
+.logo {
+flex-grow:3;
+}
+img {
+padding:10px;
+flex-shrink: 20;
+
+}
+@media all and (max-height: 680px) {
+     img{
+        max-height: 85px;
+    }
+.logo a{
+	padding:10px;
+}
+
+780

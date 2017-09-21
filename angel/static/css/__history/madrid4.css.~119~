@@ -10,16 +10,7 @@ body {
    flex-wrap:nowrap;
    align-items:stretch;
 }
-.navigation-var {
-	font-family: 'Annie Use Your Telescope';
-	font-size: 24px;
-	color: #e2e2e2;
-	display: flex;
-	width:100%;
-	justify-content:flex-end;
-	
-	
-}
+
 .navigation-var-box{
 	display:flex;
 	align-items:stretch;
@@ -28,15 +19,39 @@ body {
 	padding-top:10px;
    
 }
+
+.category-secondary{
+	border:solid;
+	border-top-width: 0.5px;
+	border-bottom-width: 0.5px;
+}
+.category-primary-link:focus {
+	background-color: #2D2523;
+	color: #bfbfbf;
+	
+	
+}
+.category-secondary-link:focus {
+	background-color: #2D2523;
+	color: #bfbfbf;
+	
+	
+}
 .categories {
 	display:flex;
 	align-items:stretch;
 	flex-direction:column;
 
+	border: 2px;
+	border-color: aqua;
 
 }
 .category-primary-link {
 	color: #e2e2e2;
+}
+.category-secondary-link {
+	color: #e2e2e2;
+	font-size:18px;
 }
 ul{ 
    list-style-type: none;
@@ -44,20 +59,17 @@ ul{
 }
 
 
-.categories:hover .categories-secondary{
+.categories:focus .categories-secondary{
 	display:block;
 }
-.categories:hover{
-	background-color: #e2e2e2;
-	border: 2px solid;
-}
+
+
 .categories-secondary{
 display:none;
+border-bottom-width: 2px;
 
-	border: 2px solid;
-   background-color: #e2e2e2;
+   background-color: #2D2523;
    padding: 4px;
-   color: #2d2523;
 }
 .cat .nav{
 margin-left: 10px;
@@ -68,7 +80,17 @@ margin-left: 5px;
 margin-right:5px;
 
 }
-.
+
+.navigation-var {
+	font-family: 'Annie Use Your Telescope';
+	font-size: 24px;
+	color: #e2e2e2;
+	display: flex;
+	width:100%;
+	justify-content:flex-end;
+	
+	
+}
 
 
 
@@ -95,7 +117,7 @@ flex-shrink: 20;
 
 
 
-a{
+a nav{
 	color: #2d2523;
 }
 

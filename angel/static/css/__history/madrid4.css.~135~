@@ -9,6 +9,7 @@ body {
 	display:flex;
    flex-wrap:nowrap;
    align-items:stretch;
+   position:relative;
 }
 
 .navigation-var-box{
@@ -105,14 +106,23 @@ margin-right:5px;
 
 
 img {
-padding:10px;
-flex-shrink: 20;
+max-height: 90%;
+position:absolute;
+top:10%;
+left:10px;
 }
-@media all and (max-height: 680px) {
+@media all and (max-width: 800px) {
      img{
-        max-height: 85px;
+        display:none;
     }
 
+}
+@media all and (max-width: 1200px) {
+     img{
+        max-width:300px
+    }
+
+}
 
 
 

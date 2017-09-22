@@ -1,0 +1,37 @@
+.post-list {
+	height:100%;
+	display:flex;
+	flex-direction:column;
+	position:relative;
+	margin:10px;
+	
+}
+
+.post{
+	height:20%;
+	width:100%;
+	background-color: #faf0e6;
+	margin:10px 0px 30px 0px;
+	border: solid;
+}
+
+#id_text{
+	width:100%;
+}
+#id_title{
+	width:20%;
+}
+.post-form input + p{
+	display:flex;
+	flex-direction:column;
+}
+.post-list h1 {
+	margin-bottom:50px;
+	font-family: "Showcard Gothic";
+	font-size:30px;
+}
+.post h1{
+	display:flex;
+	flex-direction:row;
+	
+}

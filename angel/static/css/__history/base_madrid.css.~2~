@@ -161,7 +161,7 @@ a nav{
 }
 .second {
 	width:80%;
-	background-color: #e2e2e2;
+	
 	height:100%;
 }
 .third {

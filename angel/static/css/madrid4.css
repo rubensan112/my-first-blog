@@ -139,7 +139,13 @@ left:10px;
     }
 
 }
-
+.page-not-found {
+	font-family: 'Aladin';
+	font-size:48px;
+	margin-left:20px;
+	margin-top:20px;
+	color: #8b0000;
+}
 
 
 

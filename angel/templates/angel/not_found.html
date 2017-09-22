@@ -1,16 +1,6 @@
-{% load staticfiles %}
-<html>
-<head>
-    <title>Peña Madrilista Villanovense</title>
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet"
-          type="text/css">
-    <link rel="stylesheet" href="{% static 'css/error1.css' %}">
-</head>
-<body>
-<div class="page-header">
-    <h1><a href="/">Fucking idiot, this page doesn't exist</a></h1>
+{% extends 'angel/base_test.html' %}
+{% block content %}
+<div class="page-not-found">
+    Page not found
 </div>
-</body>
-</html>
+{% endblock %}

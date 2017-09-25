@@ -23,7 +23,7 @@
     border-color: navy;
     border-radius: 10%;
     }
-    .top-background {
+    .background {
     background-color: black;
     height: 120px;
     position:relative;

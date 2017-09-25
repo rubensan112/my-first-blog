@@ -1,4 +1,4 @@
-
++
 body { 
    background-image: url(/static/images/fondo-estadio1.jpg);
    background-size: cover;
@@ -18,7 +18,6 @@ body {
 	padding-right: 5px;
 	text-align: center;
 	padding-top:10px;
-
    
 }
 
@@ -104,11 +103,8 @@ margin-right:5px;
 	width:100%;
 	height:100%;
 }
-  @media all and (max-width: 713px) {
-    img[alt='logo']{
-        display:none;
-    }
-}
+
+
 
 
 
@@ -149,4 +145,7 @@ a nav{
 .third {
 	width:10%;
 	height: 100%;
+}
+div {
+	height:100%;
 }

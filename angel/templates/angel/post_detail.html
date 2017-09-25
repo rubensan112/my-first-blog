@@ -1,7 +1,12 @@
-    {% extends 'angel/base_test.html' %}
 
+{% extends 'angel/base_test.html' %}
+    {% load staticfiles %}
     {% block content %}
+<div class="imagen-header">
+    <img src="{% static 'images/logo.png' %}" alt="header"/>
+</div>
         <div class="post">
+
 {% if post.published_date %}
 {% else %}
     <a class="btn btn-default" href="{% url 'post_publish' pk=post.pk %}">Publish</a>
